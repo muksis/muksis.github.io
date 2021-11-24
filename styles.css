@@ -1,0 +1,150 @@
+body {
+    padding: 1em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.wrapper-index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-template-areas:
+    'navbar-index navbar-index navbar-index'
+    'header-index header-index header-index'
+    'biopic about about'
+    '... iframe ...';
+}
+
+@media only screen and (max-width: 550px) {
+    .wrapper-index{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'navbar-index'
+        'header-index'
+        'biopic'
+        'about'
+        'iframe';
+    }
+}
+
+.wrapper-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-template-areas:
+    'navbar-projects navbar-projects navbar-projects'
+    'header-projects header-projects header-projects'
+    'card1 card2 card3';
+}
+
+@media only screen and (max-width: 550px) {
+    .wrapper-projects{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'navbar-projects'
+        'header-projects'
+        'card1'
+        'card2'
+        'card3';
+    }
+}
+
+.wrapper-contacts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-template-areas:
+    'navbar-contacts navbar-contacts navbar-contacts'
+    'header-contacts header-contacts header-contacts'
+    'contacts ... ...';
+}
+
+@media only screen and (max-width: 550px) {
+    .wrapper-contacts{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'navbar-contacts'
+        'header-contacts'
+        'contacts';
+    }
+}
+
+.navbar-index {
+    grid-area: navbar-index;
+}
+
+.navbar-projects {
+    grid-area: navbar-projects;
+}
+
+.navbar-contacts {
+    grid-area: navbar-contacts;
+}
+
+#header-index {
+    grid-area: header-index;
+}
+
+#header-projects {
+    grid-area: header-projects;
+}
+
+#header-contacts {
+    grid-area: header-contacts;
+}
+
+#biopic {
+    grid-area: biopic;
+}
+
+#about {
+    background: lightgray;
+    padding: 1em;
+    grid-area: about;
+}
+
+#iframe {
+    grid-area: iframe;
+}
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.card-link {
+    color: white;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    color: black;
+}
+
+#contacts {
+    grid-area: contacts;
+}
+
+.contacts-link {
+    color: green;
+    text-decoration: none;
+}
+
+.contacts-link:hover {
+    color: black;
+}
+
+.label-text {
+    padding-top: 1em;
+    padding-bottom: 0em;
+}
+
+#button-submit {
+    margin-top: 0.5em;
+}
