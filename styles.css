@@ -24,6 +24,10 @@ body {
         'about'
         'iframe';
     }
+    
+    .navbar-brand {
+        margin-right: 0;
+    }
 }
 
 .wrapper-projects {
@@ -46,6 +50,10 @@ body {
         'card2'
         'card3';
     }
+    
+    .navbar-brand {
+        margin-right: 0;
+    }
 }
 
 .wrapper-contacts {
@@ -65,6 +73,10 @@ body {
         'navbar-contacts'
         'header-contacts'
         'contacts';
+    }
+    
+    .navbar-brand {
+        margin-right: 0;
     }
 }
 
