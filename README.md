@@ -8,4 +8,5 @@ Clone the repository and simply open the file index.html in your preferred brows
 
 ## Roadmap of future improvements
 Add projects on ReactJS.
+
 Review the code (DRY).
